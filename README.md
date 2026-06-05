@@ -167,4 +167,4 @@ Full interactive docs available at: `http://localhost:8000/docs`
 
 ---
 
-## Built for BCA Final Year / Internship Portfolio
+## built by luckyyy
