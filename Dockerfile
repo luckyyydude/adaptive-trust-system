@@ -8,11 +8,8 @@ COPY backend/requirements.txt .
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy all backend code
+# Copy the entire backend code into /app
 COPY backend/ .
 
-# Expose port
-EXPOSE 8000
-
-# Run the app
+# Run the app (using main.py, not app.main)
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
